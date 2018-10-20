@@ -1,21 +1,5 @@
 const fs = require('fs');
 
-/*
-    const mysql = require('mysql');
-    const password = require('..\..\password.json')
-
-    var con = mysql.createConnection({
-    host: "91.200.100.133",
-    user: "thx4fish",
-    password: password.password
-    });
-
-    con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    });
-*/
-
 fs.readFile(__dirname + '/random.txt', function (err, data) {
     if (err) {
         throw err;
