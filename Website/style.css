@@ -1,0 +1,58 @@
+footer {
+  position: fixed;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  background-color: #a1a1ee;
+}
+
+.logo{max-width: 10em;
+margin-left: 3em;
+margin-right: 3em
+}
+.header{
+	display: block;
+	background-color: black;
+	max-height: 12em;
+	width: 100%;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+a:link, a:visited {
+    color: #000000;
+}
+
+a:active{
+    color: #FFFFFF;
+}
+h1 {
+	font-family:font;
+	text-decoration: underline;
+  	font-size: 100px;
+ 	text-align: center;
+	color: white;
+	margin: 0
+}
+@media screen and(
+	max-width: 800px){
+	.logo{
+		display:hidden;
+	}
+}
+@font-face { font-family: 'font';
+    src: url('fonts/font1.ttf')
+        format('truetype')
+}
+
+
+.content{
+	max-width: 1000px;
+	margin:auto;
+}
+h2{
+	font-family:font;
+	text-decoration: underline;
+}
+.image{
+	width: 50%
+}
