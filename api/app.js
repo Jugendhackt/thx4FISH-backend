@@ -1,4 +1,5 @@
 // ! const pool = require('./database')();
+const console = require('./amazing_console.js');
 const x = 'app.js';
 const bodyParser = require('body-parser');
 const express = require('express');
