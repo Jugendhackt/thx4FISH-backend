@@ -33,11 +33,12 @@ h1 {
  	text-align: center;
 	color: white;
 	margin: 0
-}
-@media (max-width: 800px){
+}@media (max-width: 1000px){
 	.logo{
 		display:none;
 	}
+}
+@media (max-width: 800px){
 	h1{
 		font-size: 50px
 	}
@@ -51,7 +52,9 @@ h1 {
 .content{
 	max-width: 1000px;
 	margin:auto;
+	margin-bottom: 25px;
 }
+
 h2{
 	font-family:font;
 	text-decoration: underline;
