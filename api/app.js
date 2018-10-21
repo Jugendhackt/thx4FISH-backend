@@ -42,13 +42,14 @@ function handelMacAddress(mac_address_key, request, response) {
         const json = JSON.parse(data);
 
 
-        
+
         let mac_address_value = json[mac_address_key];
 
-        if(mac_address_value == null)
+        if (mac_address_value == null)
             mac_address_value = "unknown";
 
-        console.log(`RESPONSE with ${JSON.stringify({ key: mac_address_key, value: mac_address_value })}`);
+
+        if (mac_address_value) console.log(`RESPONSE with ${JSON.stringify({ key: mac_address_key, value: mac_address_value })}`);
         response.send({ key: mac_address_key, value: mac_address_value });
     });
 }
@@ -73,10 +74,10 @@ function addMacAddress(mac_address_key, mac_address_value, request, response) {
     });
 }
 
-function keyConverter(key){
+function keyConverter(key) {
     key = key.replace(/(\W+)/g, '');
     key = key.toUpperCase();
-    key = key.slice(0,6);
+    key = key.slice(0, 6);
     key = key.match(/.{1,2}/g).join('-');
     return key;
 }
